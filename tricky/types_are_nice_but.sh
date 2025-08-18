@@ -7,6 +7,10 @@ if $string_number != $int_number {
     print "The string and integer are not equal."
 }
 
+if ($string_number | describe) != ($int_number | describe) {
+    print "The types can be checked first."
+}
+
 print $"string_number describe: ($string_number | describe)"
 print $"int_number describe: ($int_number | describe)"
 
