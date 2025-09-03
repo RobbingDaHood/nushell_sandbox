@@ -2,6 +2,7 @@
 
 let string_number = "123"
 let int_number = 123 
+let string_not_number = "abc"
 
 if $string_number != $int_number {
     print "The string and integer are not equal."
@@ -17,3 +18,5 @@ print $"int_number describe: ($int_number | describe)"
 if ($string_number | into int) == $int_number {
     print "Casting to integer works."
 } 
+
+let bad_casting = $string_not_number | into int
